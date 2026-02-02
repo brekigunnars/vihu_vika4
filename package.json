@@ -1,0 +1,13 @@
+{
+  "name": "week-3-vitest",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vitest": "^4.0.18"
+  }
+}
