@@ -1,0 +1,22 @@
+name: Hello World
+
+# When to run this workflow
+on: [push]
+
+# What to do
+jobs:
+  greet:
+    # Which virtual machine to use
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Print a message
+      - name: Say Hello
+        run: echo "Hello, GitHub Actions!"
+
+      # Step 2: Show some info
+      - name: Show Environment Info
+        run: |
+          echo "Repository: ${{ github.repository }}"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Triggered by: ${{ github.actor }}"
